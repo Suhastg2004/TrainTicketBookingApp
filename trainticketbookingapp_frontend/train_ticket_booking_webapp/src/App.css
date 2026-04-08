@@ -1,0 +1,120 @@
+.page-wrap {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #eef3ff 0%, #f6f8fc 100%);
+}
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #1a2a5c;
+}
+
+.hero p {
+  margin: 8px 0 0;
+  color: #4a5a82;
+}
+
+.content-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #dbe3f8;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.content-card h2 {
+  margin: 0 0 16px;
+  color: #1a2a5c;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 14px;
+  color: #2f3f70;
+}
+
+.field select,
+.field input {
+  height: 40px;
+  border: 1px solid #c8d4f2;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.primary-btn {
+  grid-column: 1 / -1;
+  height: 42px;
+  border: none;
+  border-radius: 8px;
+  background: #3857ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.popular-routes-block {
+  margin-top: 24px;
+}
+
+.popular-routes-block h3 {
+  margin: 0 0 10px;
+  color: #1a2a5c;
+}
+
+.route-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.route-btn {
+  border: 1px solid #c8d4f2;
+  background: #f4f7ff;
+  color: #1c2d63;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.hint {
+  margin: 10px 0 0;
+  color: #5a678e;
+  font-size: 13px;
+}
+
+.summary-grid {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+
+.text-link {
+  color: #3857ff;
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+}
